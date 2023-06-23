@@ -87,7 +87,7 @@ configmapReload:
 server:
   ## Prometheus server container name
   ##
-  name: server
+  name: ""
 
   ## Use a ClusterRole (and ClusterRoleBinding)
   ## - If set to false - we define a RoleBinding in the defined namespaces ONLY
@@ -605,7 +605,8 @@ server:
 
     loadBalancerIP: ""
     loadBalancerSourceRanges: []
-    servicePort: 80
+    #servicePort: 80
+    servicePort: 9090
     sessionAffinity: None
     type: ClusterIP
 
